@@ -1,0 +1,28 @@
+{
+    "styles": [
+        {
+            "id": 1,
+            "top":"green and purple sweater",
+            "bottom": "purple loose pants",
+            "shoes": "white heels",
+            "accessories": "blue purse",
+            "img": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.instyle.com%2Ffashion%2Fclothing%2Fsweater-outfits&psig=AOvVaw09U87fqLnp6ZjTiVJ4YH3m&ust=1717326616206000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCJDNyayiuoYDFQAAAAAdAAAAABAE"
+        },
+        {
+            "id": 2,
+            "top": "brown jacket with white crop top",
+            "bottom": "orange pants",
+            "shoes": "beige boot heels",
+            "accessories": "brown purse",
+            "img":"https://www.google.com/url?sa=i&url=https%3A%2F%2Flexica.art%2Fprompt%2F8440b844-8490-43b9-825e-9b53ca802d4e&psig=AOvVaw0yf0P7gHg4x1594y4hdGC2&ust=1717326743346000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCNjrgOiiuoYDFQAAAAAdAAAAABAK"
+        },
+        {
+            "id": 3,
+            "top": "champagne top",
+            "bottom": "white pants",
+            "shoes": "champagne heels",
+            "accessories": "gold hoop earrings",
+            "img":"https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pinterest.com%2Fpin%2Flexica-formal-dressy-outfits--795940934167234068%2F&psig=AOvVaw0yf0P7gHg4x1594y4hdGC2&ust=1717326743346000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCNjrgOiiuoYDFQAAAAAdAAAAABAP"
+        }
+    ]
+}
