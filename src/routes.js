@@ -1,6 +1,6 @@
 import ErrorPage from "./components/ErrorPage"
 import App from "./components/App";
-import StyleList from "./components/StyleList";
+import StyleCard from "./components/StyleCard";
 import StyleForm from "./components/StyleForm"
 import Home from "./components/Home"
 
@@ -13,17 +13,16 @@ const routes = [
                     {
                         path: '/',
                         element: <Home />,
-                        errorElement: <ErrorPage />
-                    },
-                    {
-                        path: '/style-list',
-                        element: <StyleList />,
-                        errorElement: <ErrorPage />
-                    },  
-                    {
-                        path: '/style-form',
-                        element: <StyleForm />,
-                        errorElement: <ErrorPage />
+                       children:[
+                        {
+                            path: '/style-card',
+                            element: <StyleCard />,
+                        },  
+                        {
+                            path: '/style-form',
+                            element: <StyleForm />,
+                        }
+                       ] 
                     }
                 ]
             }

@@ -4,9 +4,7 @@ function StyleForm(){
  
     return(
         <div>
-            <header>
-                <NavBar />
-            </header>
+        
         </div>
     )
 }
