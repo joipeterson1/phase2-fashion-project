@@ -5,9 +5,7 @@ function StyleList(){
 
     return(
         <div>
-            <header>
-                <NavBar/>
-            </header>
+
 
 
         </div>

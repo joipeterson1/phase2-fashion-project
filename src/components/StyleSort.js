@@ -1,4 +1,4 @@
-function MainContainer(){
+function StyleSort(){
 
 }
-export default MainContainer
+export default StyleSort
