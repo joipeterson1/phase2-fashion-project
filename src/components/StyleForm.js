@@ -12,7 +12,7 @@ function StyleForm(){
             <img alt=''
             src={formImg} />
             <form action="/my-handling-form-page" method="post">
-                <ul>
+                <ul className="form-ul">
                      <li>
                         <label for="top">Top Decription:</label>
                         <input type="text" />

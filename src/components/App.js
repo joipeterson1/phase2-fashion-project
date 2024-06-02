@@ -17,7 +17,9 @@ const homeImg = "https://fashinza.com/textile/wp-content/uploads/2021/11/shutter
         post new designs whenever I please to continuously broaden my porfolio dynamically.
         I can visit the "Styles" tab in the Navigation bar to view my style and the "Style Form"
          tab to add a new style.</p>
-         <Link to={"/style-form"}>Add new Styles!</Link>
+         <button>
+         <Link to={"/style-list"}>View Styles!</Link>
+         </button>
     </div>
   );
 }

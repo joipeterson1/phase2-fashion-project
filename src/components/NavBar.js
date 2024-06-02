@@ -2,13 +2,18 @@ import { NavLink} from "react-router-dom";
 import "../NavBar.css"
 function NavBar(){
     return(
-        <nav>
-        <NavLink
+      <nav>
+        <ul>
+          <li>
+          <NavLink
           to="/"
           className="nav-link" 
         >
           Home
         </NavLink>
+          </li>
+
+          <li>
         <NavLink
           to="/style-list"
           className="nav-link"
@@ -16,13 +21,18 @@ function NavBar(){
          Styles
 
         </NavLink>
-        <NavLink
+        </li>
+
+         <li>
+         <NavLink
           to="/style-form"
           className="nav-link"
         >
          Style Form
         </NavLink>
-      </nav>
+        </li>
+        </ul> 
+      </nav> 
     )
 }
 export default NavBar
