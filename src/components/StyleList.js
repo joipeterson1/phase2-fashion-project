@@ -1,7 +1,7 @@
 import StyleCard from "./StyleCard"
 import NavBar from "./NavBar"
 import {useEffect, useState} from "react"
-import {Link} from "react-router-dom"
+import {Link, Outlet} from "react-router-dom"
 
 function StyleList(){
     const [styles, setStyles]= useState([])
@@ -25,8 +25,9 @@ const styleDisplay = styles.map((style)=> (
                 <h2> My Style Portfolio! </h2>
                 {styleDisplay}
                 <button>
-                <Link to={"/style-form"}>Add a New Style!</Link>
+                <Link to={"/style-form"} styles={styles}>Add a New Style!</Link>
                 </button>
+                {/*<Outlet context={styles}/>*/}
             </div>
         )
     }
