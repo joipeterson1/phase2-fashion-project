@@ -10,7 +10,7 @@ function NavBar(){
           Home
         </NavLink>
         <NavLink
-          to="/style-card"
+          to="/style-list"
           className="nav-link"
         >
          Styles

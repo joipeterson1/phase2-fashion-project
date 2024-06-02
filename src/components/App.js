@@ -1,18 +1,9 @@
 import "../App.css"
 import NavBar from "./NavBar"
-import {Outlet} from "react-router-dom"
-import {useEffect, useState} from "react"
+import {Link} from "react-router-dom"
 
 function App() {
 const homeImg = "https://fashinza.com/textile/wp-content/uploads/2021/11/shutterstock_244027792-1.jpg"
-const [styles, setStyles]= useState([])
-
-useEffect(()=> {
-  fetch("http://localhost:3000/styles")
-  .then (r=>r.json())
-  .then (data => setStyles(data))
-  .catch(error => console.error(error))
-},[])
 
   return (
     <div >
@@ -26,7 +17,7 @@ useEffect(()=> {
         post new designs whenever I please to continuously broaden my porfolio dynamically.
         I can visit the "Styles" tab in the Navigation bar to view my style and the "Style Form"
          tab to add a new style.</p>
-         <Outlet context={styles}/>
+         <Link to={"/style-form"}>Add new Styles!</Link>
     </div>
   );
 }

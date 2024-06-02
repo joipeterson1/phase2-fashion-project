@@ -1,19 +1,15 @@
-import {Outlet, useOutletContext} from "react-router-dom"
 
-function StyleCard(){
 
-    const style = useOutletContext()
+function StyleCard({style}){
 
     return(
         <div>
-            <Outlet context={style}/>
-            <img alt="" src={style.image}/>
-            <p>
-            Top Description: {style.top}
-            Bottom Description: {style.bottom}
-            Shoe Description: {style.shoe}
-            Accessories Description: {style.accessories}
-            </p>
+            <img alt="" src={style.image} />
+            <h3>Style #{`${style.id}`} Description</h3>
+            <p>Top: {style.top} </p>
+            <p>Bottoms: {style.bottom}</p>
+            <p>Shoes: {style.shoes}</p>
+            <p>Accessories: {style.accessories}</p>   
         </div>
     )
 }
