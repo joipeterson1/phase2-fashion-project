@@ -21,7 +21,7 @@ Update and view all styles by me to expand my portfolio when ever and where ever
 
 [Style2 Image](https://image.lexica.art/full_jpg/c389ba90-d4f8-49c1-8763-1ab985916d16)
 
-[Style3 Image](https://image.lexica.art/full_jpg/c389ba90-d4f8-49c1-8763-1ab985916d16)
+[Style3 Image](https://i.pinimg.com/736x/e9/b9/a8/e9b9a8cf2520205c99f7dab5884dc939.jpg)
 
 [Home Image](https://fashinza.com/textile/wp-content/uploads/2021/11/shutterstock_244027792-1.jpg)
 
