@@ -1,27 +1,28 @@
-{ "styles": [
+{
+  "styles": [
     {
-        "id": 1,
-        "top":"Green and Purple Sweater",
-        "bottom": "Purple Loose Pants",
-        "shoes": "White Heels",
-        "accessories": "Blue Purse",
-        "image": "https://www.instyle.com/thmb/MhazVk0yrDitS5oHhD6NtiMpicQ=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/GettyImages-1436925110-b8d05eeaa86243baa8d00cffa9b16c79.jpg"
+      "id": "1",
+      "top": "Green and Purple Sweater",
+      "bottom": "Purple Loose Pants",
+      "shoes": "White Heels",
+      "accessories": "Blue Purse",
+      "image": "https://www.instyle.com/thmb/MhazVk0yrDitS5oHhD6NtiMpicQ=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/GettyImages-1436925110-b8d05eeaa86243baa8d00cffa9b16c79.jpg"
     },
     {
-        "id": 2,
-        "top": "Brown Jacket with a White Crop Top",
-        "bottom": "Orange Pants",
-        "shoes": "Beige Boot Heels",
-        "accessories": "Brown Purse",
-        "image":"https://image.lexica.art/full_jpg/c389ba90-d4f8-49c1-8763-1ab985916d16"
+      "id": "2",
+      "top": "Brown Jacket with a White Crop Top",
+      "bottom": "Orange Pants",
+      "shoes": "Beige Boot Heels",
+      "accessories": "Brown Purse",
+      "image": "https://image.lexica.art/full_jpg/c389ba90-d4f8-49c1-8763-1ab985916d16"
     },
     {
-        "id": 3,
-        "top": "Champagne Top",
-        "bottom": "White Pants",
-        "shoes": "Champagne Heels",
-        "accessories": "Gold Hoop Earrings",
-        "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBGolERlHQHHNLMOJLODzNwHWh4mGveJjkhQ&s"
+      "id": "3",
+      "top": "Champagne Top",
+      "bottom": "White Pants",
+      "shoes": "Champagne Heels",
+      "accessories": "Gold Hoop Earrings",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBGolERlHQHHNLMOJLODzNwHWh4mGveJjkhQ&s"
     }
-]
+  ]
 }
