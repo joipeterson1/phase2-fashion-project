@@ -14,12 +14,14 @@ const routes = [
                      path: '/style-list',
                      element: <StyleList />,
                      errorElement: <ErrorPage />,
-                },  
-                {
-                     path: '/style-form',
-                     element: <StyleForm />,
-                     errorElement: <ErrorPage />,
-                 }      
+                     children: [
+                        {
+                            path: 'style-form',
+                            element: <StyleForm />,
+                            errorElement: <ErrorPage />,
+                        }
+                     ]
+                }        
         ]
 
 export default routes;

@@ -25,9 +25,9 @@ const styleDisplay = styles.map((style)=> (
                 <h2> My Style Portfolio! </h2>
                 {styleDisplay}
                 <button>
-                <Link to={"/style-form"} styles={styles}>Add a New Style!</Link>
+                <Link to={"/style-list/style-form"} styles={styles}>Add a New Style!</Link>
                 </button>
-                {/*<Outlet context={styles}/>*/}
+                {<Outlet context={styles}/>}
             </div>
         )
     }

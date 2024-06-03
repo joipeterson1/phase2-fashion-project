@@ -25,7 +25,7 @@ function NavBar(){
 
          <li>
          <NavLink
-          to="/style-form"
+          to="/style-list/style-form"
           className="nav-link"
         >
          Style Form
