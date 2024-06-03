@@ -20,7 +20,9 @@ const {handleSubmit,
         <div>
             <h3> Add a New Style to Your Portfolio!!!</h3>
             <img alt='' src={formImg} />
-            <form onSubmit={handleSubmit}>
+
+            <form className="center-form" onSubmit={handleSubmit}>
+                <h2>Add A New Style</h2>
                 <ul className="form-ul">
                      <li>
                         <label>Top Decription:</label>
