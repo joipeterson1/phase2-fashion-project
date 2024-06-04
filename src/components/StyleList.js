@@ -36,7 +36,11 @@ function handleSubmit(e){
     })
     .then((r)=> r.json())
     .then((newData)=> handleAddStyle(newData))
-
+    setTop('')
+    setBottom('')
+    setShoes('')
+    setAccessories('')
+    setImage('')
 }
 
     useEffect(()=> {
