@@ -23,6 +23,14 @@
       "shoes": "Champagne Heels",
       "accessories": "Gold Hoop Earrings",
       "image": "https://i.pinimg.com/736x/e9/b9/a8/e9b9a8cf2520205c99f7dab5884dc939.jpg"
+    },
+    {
+      "id": "6339",
+      "top": "pink top",
+      "bottom": "pink bottom",
+      "shoes": "pink shoes",
+      "accessories": "gold earrings",
+      "image": "https://image.lexica.art/full_jpg/6d7bb825-d944-4ac3-9dc6-ae47dd607ddd"
     }
   ]
 }

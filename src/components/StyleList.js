@@ -18,7 +18,7 @@ function handleAddStyle(submittedData){
 function handleSubmit(e){
     e.preventDefault()
     const submittedData = {
-       // id: `${styles.length + 1}`,
+        id: `${styles.length + 1}`,
         top: top,
         bottom: bottom,
         shoes: shoes,
