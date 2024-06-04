@@ -11,18 +11,22 @@ const [shoes, setShoes]=useState('')
 const [accessories, setAccessories]=useState('')
 const [image, setImage]=useState('')
 
+function handleAddStyle(submittedData){
+    setStyles([...styles, submittedData])
+}
 
 function handleSubmit(e){
     e.preventDefault()
     const submittedData = {
-        id: `${styles.length + 1}`,
+       // id: `${styles.length + 1}`,
         top: top,
         bottom: bottom,
         shoes: shoes,
         accessories: accessories,
         image: image,
       };
-
+     
+//const newData = [...submittedData, styles]
     fetch('http://localhost:3000/styles', {
         method: "POST",
         headers: {
@@ -31,7 +35,7 @@ function handleSubmit(e){
         body: JSON.stringify(submittedData)
     })
     .then((r)=> r.json())
-    .then((newData)=> setStyles(newData))
+    .then((newData)=> handleAddStyle(newData))
 
 }
 
