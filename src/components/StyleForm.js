@@ -1,20 +1,44 @@
-import {useOutletContext} from "react-router-dom"
-
+import { useOutletContext } from "react-router-dom"
+import {useState} from "react"
 
 function StyleForm(){
  const formImg= "https://www.careergirls.org/wp-content/uploads/2018/05/FashionDesigner_1920x1080.jpg"
-const {handleSubmit,
-    top, 
-    setTop,
-    bottom, 
-    setBottom,
-    shoes, 
-    setShoes,
-    accessories, 
-    setAccessories,
-    image,
-    setImage}= useOutletContext()
+const {styles, setStyles} = useOutletContext()
+    const [top, setTop]=useState('')
+    const [bottom, setBottom]=useState('')
+    const [shoes, setShoes]=useState('')
+    const [accessories, setAccessories]=useState('')
+    const [image, setImage]=useState('')
 
+    function handleAddStyle(submittedData){
+        setStyles([...styles, submittedData])
+    }
+
+    function handleSubmit(e){
+        e.preventDefault()
+        const submittedData = {
+            top: top,
+            bottom: bottom,
+            shoes: shoes,
+            accessories: accessories,
+            image: image,
+          };
+    
+        fetch('http://localhost:3000/styles', {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify(submittedData)
+        })
+        .then((r)=> r.json())
+        .then((newData)=> handleAddStyle(newData))
+        setTop('')
+        setBottom('')
+        setShoes('')
+        setAccessories('')
+        setImage('')
+    }
 
     return(
         <div>
