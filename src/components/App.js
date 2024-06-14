@@ -1,25 +1,28 @@
 import "../App.css"
+import {useEffect, useState} from "react"
 import NavBar from "./NavBar"
-import {Link} from "react-router-dom"
+import { Outlet } from "react-router-dom"
 
 function App() {
-const homeImg = "https://fashinza.com/textile/wp-content/uploads/2021/11/shutterstock_244027792-1.jpg"
+  const [styles, setStyles]= useState([])
+
+  useEffect(()=> {
+    fetch("http://localhost:3000/styles")
+    .then (r=>r.json())
+    .then (data => setStyles(data))
+    .catch(error => console.error(error))
+  },[])
+
+  function handleAddStyle(submittedData){
+    setStyles([...styles, submittedData])
+}
 
   return (
-    <div >
+    <div>
       <header>
-        <NavBar />
+        <NavBar/>
       </header>
-    <h2> Welcome to FABFashion! </h2>
-      <img alt="" src={homeImg}/>
-      <p>Greetings and welcome to my fashion platform!! FabFashion is a diverse app 
-        that I use to keep track of all of my fashion designs. Here I can upload and 
-        post new designs whenever I please to continuously broaden my porfolio dynamically.
-        I can visit the "Styles" tab in the Navigation bar to view my style and the "Style Form"
-         tab to add a new style.</p>
-         <button>
-         <Link to={"/style-list"}>View Styles!</Link>
-         </button>
+      <Outlet context={{styles: styles, handleAddStyle: handleAddStyle, setStyles: setStyles}}/>
     </div>
   );
 }

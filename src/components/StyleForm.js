@@ -1,18 +1,18 @@
-import { useOutletContext } from "react-router-dom"
 import {useState} from "react"
+import {useOutletContext} from "react-router-dom"
 
 function StyleForm(){
+
  const formImg= "https://www.careergirls.org/wp-content/uploads/2018/05/FashionDesigner_1920x1080.jpg"
-const {styles, setStyles} = useOutletContext()
+
+ const {handleAddStyle} = useOutletContext()
+
     const [top, setTop]=useState('')
     const [bottom, setBottom]=useState('')
     const [shoes, setShoes]=useState('')
     const [accessories, setAccessories]=useState('')
     const [image, setImage]=useState('')
-
-    function handleAddStyle(submittedData){
-        setStyles([...styles, submittedData])
-    }
+    const [message, setMessage]=useState('')
 
     function handleSubmit(e){
         e.preventDefault()
@@ -38,13 +38,12 @@ const {styles, setStyles} = useOutletContext()
         setShoes('')
         setAccessories('')
         setImage('')
+        setMessage('Your style has been added!')
     }
 
     return(
         <div>
             <h3> Add a New Style to Your Portfolio!!!</h3>
-            <img alt='' src={formImg} />
-
             <form className="center-form" onSubmit={handleSubmit}>
                 <h2>Add A New Style</h2>
                 <ul className="form-ul">
@@ -73,6 +72,8 @@ const {styles, setStyles} = useOutletContext()
                     </li>
                 </ul>
                 </form>
+                {message || <h3>{message}</h3>}
+                <img alt='' src={formImg} />
         </div>
     )
 }
