@@ -1,6 +1,6 @@
 import {useState} from "react"
 
-function StyleCard({style}){
+function StyleCard({handleDelete, style}){
 const details = 
     <div>
     <h3>Style #{`${style.id}`} Description</h3>
@@ -22,11 +22,19 @@ function handleDetailClick(){
     setShowDetails((showDetails)=> !showDetails)
 }
 
+function handleDeleteClick(){
+fetch(`http://localhost:3000/styles/${style.id}`,{
+    method: "DELETE",
+})
+.then(r => r.json())
+.then(()=> handleDelete(style))
+}
 
     return(
         <div>
             <img alt="" src={style.image} />
             <button onClick={handleDetailClick}>Details</button>  
+            <button onClick={handleDeleteClick}>Delete Style</button>  
             {detailDisplay}
         </div>
     )

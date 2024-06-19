@@ -3,10 +3,15 @@ import {Link, useOutletContext} from "react-router-dom"
 
 
 function StyleList(){
-    const {styles} = useOutletContext()
+    const {styles, setStyles} = useOutletContext()
+
+    function handleDelete(deleted){
+        const updatedStyles = styles.filter((style)=> style !== deleted.id)
+        setStyles(updatedStyles)
+    }
 
     const styleDisplay = styles.map((style)=> (
-    <StyleCard key={style.id} style={style}/>
+    <StyleCard key={style.id} handleDelete={handleDelete} style={style}/>
 ))
         return(
             <div>
