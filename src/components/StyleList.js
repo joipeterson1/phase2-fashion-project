@@ -13,7 +13,7 @@ function StyleList(){
                 <h2> My Style Portfolio! </h2>
                 {styleDisplay}
                 <button>
-                <Link to={"/style-form"} /*styles={styles} setStyles={setStyles}*/>Add a New Style!</Link>
+                <Link to={"/style-form"}>Add a New Style!</Link>
                 </button>
             </div>
         )

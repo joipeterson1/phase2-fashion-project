@@ -10,19 +10,16 @@ const routes = [
     errorElement: <ErrorPage />,
     children:[
                         {   path: '/home',
-                            element: <Home />,
-                            errorElement: <ErrorPage />
+                            element: <Home />
                         },
                         {
                             path: '/style-list',
-                            element: <StyleList />,
-                            errorElement: <ErrorPage />
+                            element: <StyleList />
                        },
        
                        {
                            path: '/style-form',
-                           element: <StyleForm />,
-                           errorElement: <ErrorPage />
+                           element: <StyleForm />
                        }
                     ]
                     }
