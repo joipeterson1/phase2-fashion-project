@@ -6,7 +6,7 @@ function StyleList(){
     const {styles, setStyles} = useOutletContext()
 
     function handleDelete(deleted){
-        const updatedStyles = styles.filter((style)=> style !== deleted.id)
+        const updatedStyles = styles.filter((style)=> style.id !== deleted.id)
         setStyles(updatedStyles)
     }
 
