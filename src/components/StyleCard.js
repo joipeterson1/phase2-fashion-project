@@ -1,5 +1,6 @@
 import {useState} from "react"
 import StyleUpdateForm from "./StyleUpdateForm"
+
 function StyleCard({handleUpdate, handleDelete, style}){
 
     const [showDetails, setShowDetails] = useState(false)
@@ -26,7 +27,7 @@ function handleDetailClick(){
 }
 
 function handleUpdateToggle(){
-    if (showUpdateForm === false){
+    if (showUpdateForm === true){
         setStyleUpdateForm(<StyleUpdateForm style={style} handleUpdate={handleUpdate}/>)
     } else {
         setStyleUpdateForm('')
@@ -45,11 +46,13 @@ fetch(`http://localhost:3000/styles/${style.id}`,{
     return(
         <div>
             <img alt="" src={style.image} />
+            <div>
             <button onClick={handleDetailClick}>Details</button>  
             <button onClick={handleDeleteClick}>Delete Style</button>  
             {detailDisplay}
             <button onClick={handleUpdateToggle}>Update Style</button>
             {styleUpdateForm}
+            </div>
         </div>
     )
 }
