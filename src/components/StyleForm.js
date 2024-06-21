@@ -1,5 +1,5 @@
 import {useState} from "react"
-import {useOutletContext} from "react-router-dom"
+import {Link, useOutletContext} from "react-router-dom"
 
 function StyleForm(){
 
@@ -44,6 +44,9 @@ function StyleForm(){
     return(
         <div>
             <h3> Add a New Style to Your Portfolio!!!</h3>
+            <button>
+            <Link to={"/style-list"}>View Style Portfolio!</Link>
+            </button>
             <form className="center-form" onSubmit={handleSubmit}>
                 <h2>Add A New Style</h2>
                 <ul className="form-ul">
